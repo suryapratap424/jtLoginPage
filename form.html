@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIND JOBS</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: cursive;
+        }
+
+        .container {
+            margin: auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url("https://www.cael.ca/wp-content/uploads/2020/11/photo-1486312338219-ce68d2c6f44d.jpg") no-repeat center center/cover;
+        }
+
+        .row {
+            padding: 20px;
+            display: block;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .row>label {
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        input {
+            width: 50%;
+            padding: 5px;
+            margin-left: 38px;
+            border-radius: 10px;
+        }
+        input:hover{
+            background-color: rgb(223, 226, 255);
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.425);
+            min-width: 40%;
+            padding: 2em;
+        }
+
+        button {
+            width: 88%;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(96, 120, 255);
+            color: lavender;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: rgb(119, 139, 250);
+        }
+
+        @media only screen and (max-width: 490px) {
+            h1 {
+                font-size: 25px;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            input {
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Your Job Search Ends here:</h1>
+        <form action="#">
+            <div class="row">
+                <label for="name">NAME:</label>
+                <input type="text" id="name" placeholder="Your Name">
+            </div>
+            <div class="row">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" placeholder="eg :- 1234567890" title="Enter 10 Digit Mobile Number"
+                    pattern="[1-9]{1}[0-9]{9}">
+            </div>
+            <div class="row">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" placeholder="eg :- jhon.doe@email.com">
+            </div>
+            <div class="row">
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" placeholder="Create Password">
+            </div>
+            <button type="submit">REGISTER NOW</button>
+        </form>
+    </div>
+</body>
+
+</html>
