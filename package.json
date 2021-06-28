@@ -1,0 +1,20 @@
+{
+  "name": "junoterra",
+  "version": "1.0.0",
+  "description": "login page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suryapratap424/jtLoginPage.git"
+  },
+  "author": "surya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suryapratap424/jtLoginPage/issues"
+  },
+  "homepage": "https://github.com/suryapratap424/jtLoginPage#readme"
+}
